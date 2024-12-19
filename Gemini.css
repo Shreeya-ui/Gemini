@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css?family=Outfit:wght@100..900&display=swap");
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background: #fff;
+    height: 100ps;
+    font-family: "Outfit";
+
+}
+i{
+    font-size: 16px;
+}
+.container{
+    height: 100%;
+    display: flex;
+    
+}
+.SideNavigation{
+    width: 350px;
+    background: #f0f4f9;
+    padding:1rem ;
+    transition: all 0.3s ease-in-out;
+}
+.SideNavigation.topBarAction{
+    margin: 15px;
+    cursor:pointer;
+
+}
+.SideNavigation.topBarAction i{
+    font-size: 18px;
+
+}
+.SideNavigation.SideNavigation{
+    margin-top: 50px;
+    margin-bottom: 30px;
+
+}
+.SideNavigation .chatHistory{
+    max-height: 250px;
+    overflow-y: scroll;
+}
+.SideNavigation .chatHistory::-webkit-scrollbar{
+    display: none;
+}
+.SideNavigation.chatHistory h5{
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    margin: 15px 5px;
+
+}
+ul{
+    list-style : none;
+}
+.SideNavigation.chatHistory li{
+    height: 40px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    display: inline-block;
+    width: 115px;
+    white-space: newrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+.SideNavigation.chatHistory i{
+    padding-right: 10px;
+
+}
+.SideNavigation.chatHistory li:hover{
+   background: #dde3ea;
+
+}
+.SideNavigation .SideNavigation button{
+    height: 40px;
+    width: 140px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+}
