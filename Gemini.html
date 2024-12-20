@@ -6,50 +6,73 @@
     <title>Gemini AI</title>
     <link rel="stylesheet" href="Gemini.css" />
     <script defer src="Gemini.js"></script>
-
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
 </head>
 <body>
     <div class="container">
         <div class="SideNavigation">
             <div class="topBarAction">
                 <i class="fa-solid fa-bars"></i>
-
             </div>
-            <div class="SideNavigation">
-                <button><i class="fa-solid fa-plus"></i>
-                    <span class="collapsetest">New Chat</span>
+            <div class="newChat">
+                <button>
+                    <i class="fa-solid fa-plus"></i>
+                    <span class="collapsetext">New Chat</span>
                 </button>
             </div>
             <div class="chatHistory">
                 <h4>Recent</h4>
                 <ul>
-                   <i class="fa-solid fa-plus"></i> <li>Hello How are you today</li>
-                    <li>Hello How are you today</li>
-                    <li>Hello How are you today</li>
+                    <li><i class="fa-solid fa-comment"></i> How are you?</li>
+                    <li><i class="fa-solid fa-comment"></i> Tips to learn coding?</li>
+                    <li><i class="fa-solid fa-comment"></i> What's Gemini?</li>
                 </ul>
             </div>
             <div class="actionList">
-                <button class="transperentButton">
+                <button class="transparentButton">
                     <i class="fa-regular fa-circle-question"></i>
-                    <span class="collapsetest">Help</span>
+                    <span class="collapsetext">Help</span>
                 </button>
-
-
-                <button class="transperentButton">
+                <button class="transparentButton">
                     <i class="fa-solid fa-clock-rotate-left"></i>
-                    <span class="collapsetest">Activity</span>
+                    <span class="collapsetext">Activity</span>
                 </button>
-
-
-                <button class="transperentButton">
+                <button class="transparentButton">
                     <i class="fa-solid fa-gear"></i>
-                    <span class="collapsetest">Settings</span>
+                    <span class="collapsetext">Settings</span>
                 </button>
             </div>
+        </div>
+        <div class="chatWindow">
+            <div class="startContent">
+                <h1>
+                    <span class="brandHello">Hello Guys</span>
+                    <span class="brandQuestion">How can I help you today?</span>
+                </h1>
+                <ul>
+                    <li>How to become a developer?</li>
+                    <li>Tips for learning programming?</li>
+                    <li>Explain AI basics.</li>
+                </ul>
+            </div>
+            <div class="chatContent"></div>
+            <div class="inputArea">
+                <input type="text" placeholder="Enter a prompt here">
+                <div class="iconGroup">
+                    <i class="fa-solid fa-image"></i>
+                    <i class="fa-solid fa-microphone"></i>
+                    <i class="fa-solid fa-paper-plane"></i>
+                </div>
+            </div>
+            <p class="privacyPolicy">
+                Gemini may display inaccurate info. Double-check its responses. Your privacy is important to us.
+            </p>
         </div>
     </div>
 </body>

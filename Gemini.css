@@ -1,88 +1,189 @@
 @import url("https://fonts.googleapis.com/css?family=Outfit:wght@100..900&display=swap");
-*{
-    margin: 0px;
-    padding: 0px;
+
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background: #fff;
-    height: 100ps;
-    font-family: "Outfit";
+    font-family: "Outfit", sans-serif;
+}
 
-}
-i{
-    font-size: 16px;
-}
-.container{
-    height: 100%;
+.container {
+    height: 100vh;
     display: flex;
-    
 }
-.SideNavigation{
-    width: 350px;
+
+.SideNavigation {
+    width: 300px;
     background: #f0f4f9;
-    padding:1rem ;
-    transition: all 0.3s ease-in-out;
-}
-.SideNavigation.topBarAction{
-    margin: 15px;
-    cursor:pointer;
-
-}
-.SideNavigation.topBarAction i{
-    font-size: 18px;
-
-}
-.SideNavigation.SideNavigation{
-    margin-top: 50px;
-    margin-bottom: 30px;
-
-}
-.SideNavigation .chatHistory{
-    max-height: 250px;
-    overflow-y: scroll;
-}
-.SideNavigation .chatHistory::-webkit-scrollbar{
-    display: none;
-}
-.SideNavigation.chatHistory h5{
-    font-size: 0.875rem;
-    font-weight: 500;
-    line-height: 1.25rem;
-    margin: 15px 5px;
-
-}
-ul{
-    list-style : none;
-}
-.SideNavigation.chatHistory li{
-    height: 40px;
-    border-radius: 50px;
+    padding: 1rem;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.topBarAction {
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.topBarAction i {
+    font-size: 20px;
+}
+
+.newChat button {
+    width: 100%;
     padding: 10px;
+    border-radius: 50px;
+    border: none;
+    background: #dde3ea;
     cursor: pointer;
     font-size: 14px;
-    display: inline-block;
-    width: 115px;
-    white-space: newrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.newChat button:hover {
+    background: #c4c7c5;
+}
+
+.chatHistory {
+    flex-grow: 1;
+    margin-top: 20px;
+    overflow-y: auto;
+}
+
+.chatHistory h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.chatHistory ul {
+    list-style: none;
+}
+
+.chatHistory li {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
     overflow: hidden;
     text-overflow: ellipsis;
-
+    white-space: nowrap;
 }
-.SideNavigation.chatHistory i{
-    padding-right: 10px;
 
+.chatHistory li i {
+    margin-right: 10px;
+    color: #555;
 }
-.SideNavigation.chatHistory li:hover{
-   background: #dde3ea;
 
+.chatHistory li:hover {
+    background: #dde3ea;
 }
-.SideNavigation .SideNavigation button{
-    height: 40px;
-    width: 140px;
-    border-radius: 50px;
-    outline: none;
+
+.actionList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.transparentButton {
+    background: transparent;
     border: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.transparentButton i {
+    margin-right: 8px;
+    color: #555;
+}
+
+.chatWindow {
+    flex-grow: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.startContent h1 {
+    font-size: 2.5rem;
+    line-height: 1.5;
+}
+
+.brandHello {
+    color: #4285f4;
+    font-weight: bold;
+}
+
+.brandQuestion {
+    color: #666;
+}
+
+.startContent ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.startContent ul li {
+    padding: 10px 15px;
+    background: #f0f4f9;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.startContent ul li:hover {
+    background: #c4c7c5;
+}
+
+.inputArea {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #f0f4f9;
+    padding: 10px;
+    border-radius: 50px;
+    position: sticky;
+    bottom: 10px;
+}
+
+.inputArea input {
+    flex-grow: 1;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.iconGroup i {
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px;
+    color: #555;
+}
+
+.iconGroup i:hover {
+    color: #4285f4;
+}
+
+.privacyPolicy {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 10px;
+    color: #777;
 }
